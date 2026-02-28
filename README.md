@@ -20,6 +20,7 @@ This application allows users to explore short-term and long-term weather patter
 - Real-time updates (auto refresh every 60 seconds)
 - Add/remove favorite cities
 - Persistent favorites (saved in localStorage)
+- Click on it, To view full city weather details
 
 ### 🔍 Detailed City View
 - 5–7 Day forecast
@@ -32,7 +33,7 @@ This application allows users to explore short-term and long-term weather patter
 ### 🔎 Search & Autocomplete
 - API-powered city search
 - Instant suggestions
-- Add searched cities to dashboard
+- Used Throttling with 250ms on User typing
 
 ### ⚙ Settings
 - Toggle between Celsius ↔ Fahrenheit
@@ -83,9 +84,6 @@ Caching strategy ensures:
 
 ---
 
-
----
-
 ## ▶ Getting Started
 
 ### 1️⃣ Clone the repository
@@ -100,3 +98,5 @@ npm run dev
 - VITE_WEATHER_API_KEY=your_weatherapi_key
 - VITE_WEATHER_API_URL=https://api.weatherapi.com/v1
 - VITE_GOOGLE_CLIENT_ID=your_google_client_id
+
+Designed & Developed by Manikant Kumar
