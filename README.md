@@ -4,6 +4,8 @@ A modern, responsive Weather Analytics Dashboard built with **React (Vite)** tha
 
 This application allows users to explore short-term and long-term weather patterns for multiple cities in a clean, production-style UI.
 
+<img width="1347" height="595" alt="dashboard" src="https://github.com/user-attachments/assets/c2f96fc3-2b7d-43cb-9f19-3510e2cdaae7" />
+
 ---
 
 ## 🚀 Features
