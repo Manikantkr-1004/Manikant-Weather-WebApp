@@ -29,8 +29,6 @@ export default function HomeTopRight() {
                 });
                 return res.data;
             },
-            staleTime: Infinity, // historical data never changes
-            gcTime: 1000 * 60 * 60 * 24, // cache for 24h
             retry: 1,
         })),
     });
@@ -56,7 +54,7 @@ export default function HomeTopRight() {
         <div className="w-full flex flex-col gap-6">
 
             <div className="w-full flex flex-col gap-3">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col items-center justify-center gap-2">
                     <p className="text-sm uppercase tracking-widest text-white font-medium">
                         Past 7 Days · (Historical Data) · {city}
                     </p>

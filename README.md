@@ -1,16 +1,100 @@
-# React + Vite
+# 🌦️ Weather Analytics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Weather Analytics Dashboard built with **React (Vite)** that provides real-time weather insights, forecasts, historical trends, and interactive visualizations.
 
-Currently, two official plugins are available:
+This application allows users to explore short-term and long-term weather patterns for multiple cities in a clean, production-style UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🌤 Dashboard
+- Displays multiple city weather summary cards
+- Shows:
+  - Current temperature
+  - Weather condition icon
+  - Humidity
+  - Wind speed
+- Real-time updates (auto refresh every 60 seconds)
+- Add/remove favorite cities
+- Persistent favorites (saved in localStorage)
 
-## Expanding the ESLint configuration
+### 🔍 Detailed City View
+- 5–7 Day forecast
+- Hourly temperature trends
+- Daily temperature trends
+- Precipitation patterns
+- Wind speed & direction visualization
+- Interactive charts (Recharts)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔎 Search & Autocomplete
+- API-powered city search
+- Instant suggestions
+- Add searched cities to dashboard
+
+### ⚙ Settings
+- Toggle between Celsius ↔ Fahrenheit
+- Unit preference persisted between sessions
+
+### 🔐 Google Authentication (Bonus)
+- Simple Google Sign-In
+- User profile displayed in navbar
+- Session persisted via localStorage
+
+### ⚡ Real-Time & Caching (Bonus)
+- TanStack Query used for:
+  - Smart caching
+  - Background refetching
+  - Automatic stale data handling
+- Data never older than 60 seconds
+- Reduced unnecessary API calls
+
+---
+
+## 🛠 Tech Stack
+
+- ⚛ React (Vite)
+- 🔀 React Router DOM
+- 🗂 Redux (State management)
+- 🔄 TanStack Query (Caching & Real-time fetching)
+- 📊 Recharts (Data visualization)
+- 🎨 Tailwind CSS (UI styling)
+- 🔐 @react-oauth/google (Authentication)
+- 🌍 WeatherAPI.com (Weather Data API)
+
+---
+
+## 📡 API Integration
+
+Weather data is fetched from **WeatherAPI.com (Free Tier)**:
+
+- Current weather
+- 7-day forecast
+- Hourly forecast
+- Historical data
+- City search autocomplete
+
+Caching strategy ensures:
+- Optimized API usage
+- Data refresh every 60 seconds
+- Smooth user experience
+
+---
+
+
+---
+
+## ▶ Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/Manikantkr-1004/Manikant-Weather-WebApp.git
+npm install
+npm run dev
+```
+
+### Make sure to add these in .env file
+- VITE_WEATHER_API_KEY=your_weatherapi_key
+- VITE_WEATHER_API_URL=https://api.weatherapi.com/v1
+- VITE_GOOGLE_CLIENT_ID=your_google_client_id
